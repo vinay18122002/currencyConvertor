@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="outer-container">
+    <h1>Currency Converter</h1>
+    <hr width="70%">
+    <div class="converter-container">
+      <div class="input-amount-container">
+        <p>Amount to convert: </p>
+        <input type="number" id="amount-input">
+      </div>
+      <div class="currency-select-container">
+        <div class="from-container">
+          <label for="currency-names">From:</label>
+          <select name="from-currency-names" id="from-currency-names">
+            <option value="select">--select--</option>
+            <option value="usd">USD - United States Dollar</option>
+            <option value="inr">INR - Indian Rupee</option>
+            <option value="eur">EUR - Euro</option>
+            <option value="pkr">PKR - Pakistani Rupee</option>
+            <option value="afn">AFN - Afghan Afghani</option>
+            <option value="gbp">GBP - British Pound Sterling</option>
+            <option value="jpy">JPY - Japanese Yen</option>
+            <option value="aud">AUD - Australian Dollar</option>
+            <option value="cad">CAD - Canadian Dollar</option>
+            <option value="chf">CHF - Swiss Franc</option>
+            <option value="cny">CNY - Chinese Yuan</option>
+            <option value="inr">INR - Indian Rupee</option>
+            <option value="brl">BRL - Brazilian Real</option>
+            <option value="mxn">MXN - Mexican Peso</option>
+            <option value="sek">SEK - Swedish Krona</option>
+            <option value="sgd">SGD - Singapore Dollar</option>
+            <option value="nzd">NZD - New Zealand Dollar</option>
+            <option value="hkd">HKD - Hong Kong Dollar</option>
+            <option value="npr">NPR - Nepalese Rupee</option>
+            <option value="lkr">LKR - Sri Lankan Rupee</option>
+            <option value="bdt">BDT - Bangladeshi Taka</option>
+          </select>
+        </div>
+        <div class="to-container">
+          <label for="currency-names">To:</label>
+          <select name="to-currency-names" id="to-currency-names">
+            <option value="select">--select--</option>
+            <option value="usd">USD - United States Dollar</option>
+            <option value="inr">INR - Indian Rupee</option>
+            <option value="pkr">PKR - Pakistani Rupee</option>
+            <option value="afn">AFN - Afghan Afghani</option>
+            <option value="gbp">GBP - British Pound Sterling</option>
+            <option value="jpy">JPY - Japanese Yen</option>
+            <option value="aud">AUD - Australian Dollar</option>
+            <option value="cad">CAD - Canadian Dollar</option>
+            <option value="chf">CHF - Swiss Franc</option>
+            <option value="cny">CNY - Chinese Yuan</option>
+            <option value="eur">EUR - Euro</option>
+            <option value="brl">BRL - Brazilian Real</option>
+            <option value="mxn">MXN - Mexican Peso</option>
+            <option value="sek">SEK - Swedish Krona</option>
+            <option value="sgd">SGD - Singapore Dollar</option>
+            <option value="nzd">NZD - New Zealand Dollar</option>
+            <option value="hkd">HKD - Hong Kong Dollar</option>
+            <option value="npr">NPR - Nepalese Rupee</option>
+            <option value="lkr">LKR - Sri Lankan Rupee</option>
+            <option value="bdt">BDT - Bangladeshi Taka</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="convert-button">Convert</button>
+        <button id="reset-button">Reset</button>
+      </div>
+    </div>
+    <h2 id="answer-amount-tag">Converted Amount-: </h2>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
